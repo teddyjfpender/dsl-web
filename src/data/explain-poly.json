@@ -1,0 +1,227 @@
+{
+  "canonical_ir_sha256": "c057922e65e716189447f0895f3b991accb87abe8b466e70e93a61994db5c3a0",
+  "chip": null,
+  "name": "math_polynomial4",
+  "nodes": [
+    {
+      "canonical_id": 0,
+      "gate_rows": {
+        "blake_g": 0,
+        "eq": 0,
+        "m31_to_u32": 0,
+        "qm31": 6,
+        "triple_xor": 0
+      },
+      "name": "x",
+      "op": "input",
+      "source": null
+    },
+    {
+      "canonical_id": 1,
+      "gate_rows": {
+        "blake_g": 0,
+        "eq": 0,
+        "m31_to_u32": 0,
+        "qm31": 1,
+        "triple_xor": 0
+      },
+      "name": "_s31_0",
+      "op": "mul",
+      "source": {
+        "column": 17,
+        "line": 3
+      }
+    },
+    {
+      "canonical_id": 2,
+      "gate_rows": {
+        "blake_g": 0,
+        "eq": 0,
+        "m31_to_u32": 0,
+        "qm31": 1,
+        "triple_xor": 0
+      },
+      "name": "_s31_1",
+      "op": "mul",
+      "source": {
+        "column": 17,
+        "line": 3
+      }
+    },
+    {
+      "canonical_id": 3,
+      "gate_rows": {
+        "blake_g": 0,
+        "eq": 0,
+        "m31_to_u32": 0,
+        "qm31": 1,
+        "triple_xor": 0
+      },
+      "name": "fifth",
+      "op": "mul",
+      "source": {
+        "column": 17,
+        "line": 3
+      }
+    },
+    {
+      "canonical_id": 4,
+      "gate_rows": {
+        "blake_g": 0,
+        "eq": 0,
+        "m31_to_u32": 0,
+        "qm31": 1,
+        "triple_xor": 0
+      },
+      "name": "triple",
+      "op": "mul_const",
+      "source": {
+        "column": 20,
+        "line": 4
+      }
+    },
+    {
+      "canonical_id": 5,
+      "gate_rows": {
+        "blake_g": 0,
+        "eq": 0,
+        "m31_to_u32": 0,
+        "qm31": 1,
+        "triple_xor": 0
+      },
+      "name": "combined",
+      "op": "add",
+      "source": {
+        "column": 26,
+        "line": 5
+      }
+    },
+    {
+      "canonical_id": 6,
+      "gate_rows": {
+        "blake_g": 0,
+        "eq": 0,
+        "m31_to_u32": 0,
+        "qm31": 1,
+        "triple_xor": 0
+      },
+      "name": "result",
+      "op": "add_const",
+      "source": {
+        "column": 18,
+        "line": 6
+      }
+    }
+  ],
+  "padded": {
+    "blake_g": 0,
+    "eq": 0,
+    "m31_to_u32": 0,
+    "qm31_ops": 512,
+    "triple_xor": 0
+  },
+  "preprocessed_cells": 4096,
+  "preprocessed_columns": 8,
+  "profile": "direct-m31-v4",
+  "raw": {
+    "blake_g": 0,
+    "eq": 0,
+    "m31_to_u32": 0,
+    "qm31_ops": 329,
+    "triple_xor": 0
+  },
+  "source_expressions": [
+    {
+      "chip_rows": 0,
+      "gate_rows": {
+        "blake_g": 0,
+        "eq": 0,
+        "m31_to_u32": 0,
+        "qm31": 3,
+        "triple_xor": 0
+      },
+      "nodes": [
+        "_s31_0",
+        "_s31_1",
+        "fifth"
+      ],
+      "source": {
+        "column": 17,
+        "line": 3
+      }
+    },
+    {
+      "chip_rows": 0,
+      "gate_rows": {
+        "blake_g": 0,
+        "eq": 0,
+        "m31_to_u32": 0,
+        "qm31": 1,
+        "triple_xor": 0
+      },
+      "nodes": [
+        "triple"
+      ],
+      "source": {
+        "column": 20,
+        "line": 4
+      }
+    },
+    {
+      "chip_rows": 0,
+      "gate_rows": {
+        "blake_g": 0,
+        "eq": 0,
+        "m31_to_u32": 0,
+        "qm31": 1,
+        "triple_xor": 0
+      },
+      "nodes": [
+        "combined"
+      ],
+      "source": {
+        "column": 26,
+        "line": 5
+      }
+    },
+    {
+      "chip_rows": 0,
+      "gate_rows": {
+        "blake_g": 0,
+        "eq": 0,
+        "m31_to_u32": 0,
+        "qm31": 1,
+        "triple_xor": 0
+      },
+      "nodes": [
+        "result"
+      ],
+      "source": {
+        "column": 18,
+        "line": 6
+      }
+    }
+  ],
+  "typed_interface": {
+    "inputs": [
+      {
+        "name": "x",
+        "type": {
+          "kind": "m31",
+          "length": 4
+        },
+        "visibility": "public"
+      }
+    ],
+    "output": {
+      "kind": "m31",
+      "length": 4
+    },
+    "schema": "s31-text-interface-v1",
+    "stdlib": {
+      "explicit_import": false,
+      "package": "std",
+      "version": 1
+    }
+  }
+}

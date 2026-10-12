@@ -1,0 +1,214 @@
+{
+ "artifacts": {
+  "changed_statement": "changed-statement.json",
+  "equations": "equations.json",
+  "explain": "explain.json",
+  "proof": "proof.bin",
+  "statement": "statement.json"
+ },
+ "build_or_load_seconds": 62.595937749996665,
+ "canonical_ir_sha256": "825cc34485c9229df85640c07c47619fe1f58b3795c0951a0413c8501b13dfe3",
+ "changed_public_statement_rejected": "public_outputs.result[0]",
+ "fri_fold_step": 1,
+ "independent_value_oracle": {
+  "computed_public_outputs": {
+   "result": [
+    1381993681,
+    1163620247,
+    833240539,
+    2139095920
+   ]
+  },
+  "status": "passed"
+ },
+ "independent_value_oracle_provenance": {
+  "python_version": "3.14.6",
+  "source_sha256": {
+   "deps/stwo-zig/src/frontends/riscv/air/memory_commitment/poseidon2_constants.zig": "d02b32f2f5302d21a440fbace2112d3232603e759cd0b24691c32e81d2bd4cfd",
+   "src/frontends/s31/python/oracle.py": "e66dde1d05d16db3e5acf026d53ddf94c1c4fdf93be4cbf24ef7ded6b08d0176",
+   "src/frontends/s31/python/poseidon2_oracle.py": "4be69f85c8bba203b17c51612a025eb75f4061e5328b207ead8ad83e0a2a3a37"
+  }
+ },
+ "lowering": "direct-chip",
+ "native_verifier_accepted": true,
+ "observed_cost_model": {
+  "measurement_policy": {
+   "paired_total": "prover process wall plus native verifier process wall, excluding package build and audit utilities",
+   "peak_rss": "OS high-water mark for one native process tree; null if unavailable",
+   "process_wall": "includes process startup and resource-wrapper overhead",
+   "proof_of_work": "included in prover process wall and runtime prove; separately reported only when native timers exist",
+   "setup": "cold native setup in every fresh prover process",
+   "uncertainty": "median, median absolute deviation and interpolated p90 describe this observed corpus only"
+  },
+  "metrics": {
+   "native_verify_process_wall_seconds": {
+    "max": 0.39254283299669623,
+    "median": 0.39254283299669623,
+    "median_absolute_deviation": 0.0,
+    "min": 0.39254283299669623,
+    "observations": 1,
+    "p90_interpolated": 0.39254283299669623
+   },
+   "paired_prove_and_verify_wall_seconds": {
+    "max": 0.9943354580027517,
+    "median": 0.9943354580027517,
+    "median_absolute_deviation": 0.0,
+    "min": 0.9943354580027517,
+    "observations": 1,
+    "p90_interpolated": 0.9943354580027517
+   },
+   "proof_bytes": {
+    "max": 59489,
+    "median": 59489,
+    "median_absolute_deviation": 0,
+    "min": 59489,
+    "observations": 1,
+    "p90_interpolated": 59489.0
+   },
+   "prove_process_wall_seconds": {
+    "max": 0.6017926250060555,
+    "median": 0.6017926250060555,
+    "median_absolute_deviation": 0.0,
+    "min": 0.6017926250060555,
+    "observations": 1,
+    "p90_interpolated": 0.6017926250060555
+   },
+   "prover_peak_rss_bytes": {
+    "max": 9207808,
+    "median": 9207808,
+    "median_absolute_deviation": 0,
+    "min": 9207808,
+    "observations": 1,
+    "p90_interpolated": 9207808.0
+   },
+   "prover_process_unattributed_seconds": {
+    "max": 0.46282562500605545,
+    "median": 0.46282562500605545,
+    "median_absolute_deviation": 0.0,
+    "min": 0.46282562500605545,
+    "observations": 1,
+    "p90_interpolated": 0.46282562500605545
+   },
+   "runtime_fri_pow_seconds": {
+    "max": 0.129655,
+    "median": 0.129655,
+    "median_absolute_deviation": 0.0,
+    "min": 0.129655,
+    "observations": 1,
+    "p90_interpolated": 0.129655
+   },
+   "runtime_interaction_pow_seconds": {
+    "max": 0.003944,
+    "median": 0.003944,
+    "median_absolute_deviation": 0.0,
+    "min": 0.003944,
+    "observations": 1,
+    "p90_interpolated": 0.003944
+   },
+   "runtime_prove_excluding_pow_seconds": {
+    "max": 0.0022250000000000048,
+    "median": 0.0022250000000000048,
+    "median_absolute_deviation": 0.0,
+    "min": 0.0022250000000000048,
+    "observations": 1,
+    "p90_interpolated": 0.0022250000000000048
+   },
+   "runtime_prove_seconds": {
+    "max": 0.135824,
+    "median": 0.135824,
+    "median_absolute_deviation": 0.0,
+    "min": 0.135824,
+    "observations": 1,
+    "p90_interpolated": 0.135824
+   },
+   "runtime_runtime_other_seconds": {
+    "max": 0.0016130000000000033,
+    "median": 0.0016130000000000033,
+    "median_absolute_deviation": 0.0,
+    "min": 0.0016130000000000033,
+    "observations": 1,
+    "p90_interpolated": 0.0016130000000000033
+   },
+   "runtime_setup_seconds": {
+    "max": 0.001266,
+    "median": 0.001266,
+    "median_absolute_deviation": 0.0,
+    "min": 0.001266,
+    "observations": 1,
+    "p90_interpolated": 0.001266
+   },
+   "runtime_total_through_verification_seconds": {
+    "max": 0.138967,
+    "median": 0.138967,
+    "median_absolute_deviation": 0.0,
+    "min": 0.138967,
+    "observations": 1,
+    "p90_interpolated": 0.138967
+   },
+   "runtime_witness_seconds": {
+    "max": 0.000264,
+    "median": 0.000264,
+    "median_absolute_deviation": 0.0,
+    "min": 0.000264,
+    "observations": 1,
+    "p90_interpolated": 0.000264
+   },
+   "verifier_peak_rss_bytes": {
+    "max": 5685248,
+    "median": 5685248,
+    "median_absolute_deviation": 0,
+    "min": 5685248,
+    "observations": 1,
+    "p90_interpolated": 5685248.0
+   }
+  },
+  "schema": "s31-observed-whole-prover-cost-v1",
+  "verified_trials": 1
+ },
+ "padded": {
+  "blake_g": 0,
+  "eq": 0,
+  "m31_to_u32": 0,
+  "qm31_ops": 512,
+  "triple_xor": 0
+ },
+ "preprocessed_cells": 4096,
+ "profile": "direct-m31-v4",
+ "program": "arith4_m31",
+ "program_sha256": "acc61ab37a6f3fedec1fabf094be180e143469fe2c97c8eb68c68eb782a09fa0",
+ "proof_bytes": 59489,
+ "proof_sha256": "07d40d29c483cb071e042ca0a99e81c6af138b5dd078a2866dbd0c1f5127baca",
+ "prove_seconds": 0.6017926250060555,
+ "prover_peak_rss_bytes": 9207808,
+ "prover_peak_rss_method": "darwin-time-max-rss-bytes",
+ "prover_stages": {
+  "fri_pow_seconds": 0.129655,
+  "interaction_pow_seconds": 0.003944,
+  "prove_excluding_pow_seconds": 0.0022250000000000048,
+  "prove_seconds": 0.135824,
+  "runtime_other_seconds": 0.0016130000000000033,
+  "setup_seconds": 0.001266,
+  "total_through_verification_seconds": 0.138967,
+  "witness_seconds": 0.000264
+ },
+ "raw": {
+  "blake_g": 0,
+  "eq": 0,
+  "m31_to_u32": 0,
+  "qm31_ops": 292,
+  "triple_xor": 0
+ },
+ "schema": "s31-trial-v1",
+ "text_source_relowered": true,
+ "timing_note": "Single local observation; every prover process constructs cold native setup. Wall time includes process startup and both PoW stages when present. Peak RSS is per process and null when unavailable.",
+ "verifier_peak_rss_bytes": 5685248,
+ "verifier_peak_rss_method": "darwin-time-max-rss-bytes",
+ "verify_seconds": 0.39254283299669623,
+ "visible_fri": {
+  "blowup_factor": 2,
+  "fold_step": 1,
+  "last_layer_degree_bound": 1,
+  "pow_bits": 26,
+  "queries": 70
+ }
+}

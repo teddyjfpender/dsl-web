@@ -1,0 +1,11 @@
+{
+  "name": "s31-web",
+  "private": true,
+  "type": "module",
+  "description": "The S31 website: the compiler and prover drawn as working isometric machines.",
+  "scripts": {
+    "build": "node build.mjs",
+    "serve": "python3 -m http.server 8080 --directory dist"
+  },
+  "engines": { "node": ">=20.10" }
+}

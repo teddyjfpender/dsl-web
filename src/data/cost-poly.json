@@ -1,0 +1,295 @@
+{
+  "assertion_map": [],
+  "canonical_ir_sha256": "c057922e65e716189447f0895f3b991accb87abe8b466e70e93a61994db5c3a0",
+  "chip": null,
+  "circuit_hash": "fbc59f5fb0ace5d799d5183bb52850d7599a2993ca9810b2095eb57421dbb227",
+  "component_manifest": {
+    "air_bundle_sha256": "7b8022b09d84db371cc433aa0fcf132f7687f2720e05e4dc9a7650c575dc02c2",
+    "canonical_ir_sha256": "c057922e65e716189447f0895f3b991accb87abe8b466e70e93a61994db5c3a0",
+    "chip_call": null,
+    "circuit_hash": "fbc59f5fb0ace5d799d5183bb52850d7599a2993ca9810b2095eb57421dbb227",
+    "claimed_sums": 1,
+    "components": [
+      {
+        "base_trace_columns": 12,
+        "claimed_sum_index": null,
+        "evaluation_log_size": 10,
+        "interaction_trace_columns": 8,
+        "interaction_trace_span": null,
+        "lookup_relation_ids": null,
+        "main_trace_span": null,
+        "max_constraint_log_degree_bound": null,
+        "n_constraints": 11,
+        "name": "qm31_ops",
+        "preprocessed_indices": [
+          0,
+          2,
+          3,
+          1,
+          4,
+          5,
+          6,
+          7
+        ],
+        "program_binding_sha256": "f9df3bcf4036965e1fc6bfc1a031ba0a86fb235d4f86e2713c3e59929cafde2c",
+        "proof_index": 0,
+        "random_coefficient_offset": 0,
+        "source_index": 1,
+        "trace_log_size": 9,
+        "trace_spans": [
+          {
+            "end": 0,
+            "start": 0,
+            "tree": 0
+          },
+          {
+            "end": 12,
+            "start": 0,
+            "tree": 1
+          },
+          {
+            "end": 8,
+            "start": 0,
+            "tree": 2
+          }
+        ]
+      }
+    ],
+    "composition_plan_hash": 12735617012626813569,
+    "preprocessed_columns": [
+      {
+        "commitment_index": 0,
+        "id": "qm31_ops_add_flag",
+        "log_size": 9,
+        "rows": 512,
+        "values_sha256": "cef19992dfb9368313b3f091ef9009de8216dbdbce5a56e095202b06b976687c"
+      },
+      {
+        "commitment_index": 1,
+        "id": "qm31_ops_sub_flag",
+        "log_size": 9,
+        "rows": 512,
+        "values_sha256": "03041e27ba3b0418178532a811f4111cad3123687246133271bd6cd5cbaaed0e"
+      },
+      {
+        "commitment_index": 2,
+        "id": "qm31_ops_mul_flag",
+        "log_size": 9,
+        "rows": 512,
+        "values_sha256": "408c8085db5eb95dffc7f2cbb4f51ec829dd0cbf77f25c92d8a0dc5eefd3fb52"
+      },
+      {
+        "commitment_index": 3,
+        "id": "qm31_ops_pointwise_mul_flag",
+        "log_size": 9,
+        "rows": 512,
+        "values_sha256": "802435e2d331559269b9c319fe1ecf805ac273f9a4a640eab1df63f0adf0aec1"
+      },
+      {
+        "commitment_index": 4,
+        "id": "qm31_ops_in0_address",
+        "log_size": 9,
+        "rows": 512,
+        "values_sha256": "d2b392806865b7e69559e27079e6bcaa46c75098bfeebde51e777d68387d6af3"
+      },
+      {
+        "commitment_index": 5,
+        "id": "qm31_ops_in1_address",
+        "log_size": 9,
+        "rows": 512,
+        "values_sha256": "5bc7d42830f45651d84d030f31c58d325d078192f9c6fdf66e5ceb9fb98319f4"
+      },
+      {
+        "commitment_index": 6,
+        "id": "qm31_ops_out_address",
+        "log_size": 9,
+        "rows": 512,
+        "values_sha256": "2e77f0fe87c47d5294d234a2a8c892a709a289aa39f1956ae55e690b6dfe3196"
+      },
+      {
+        "commitment_index": 7,
+        "id": "qm31_ops_mults",
+        "log_size": 9,
+        "rows": 512,
+        "values_sha256": "44ba38a7c46a4ed3562e76643078f0f060e5e16608cd685299a6066dc1b77dc6"
+      }
+    ],
+    "preprocessed_root": "e776d8a792426b6d8efd67dc5371f4947cadc259ea2ee2b49a69e7d25c75f21b",
+    "profile": "direct-m31-v4",
+    "program_sha256": "ab18f875aeb565ef666a7893fcd71a115996b1cc2d3613722317c00b91917b7d",
+    "schema": "s31-component-manifest-direct-gate-v1"
+  },
+  "constant_min_base": 256,
+  "finalization": {
+    "m31_to_u32_end": 0,
+    "m31_to_u32_start": 0,
+    "qm31_end": 329,
+    "qm31_start": 27
+  },
+  "fixed_table_max_log_size": 9,
+  "fri": {
+    "fold_step": 1,
+    "last_layer_degree_bound": 1,
+    "log_blowup_factor": 1,
+    "pow_bits": 26,
+    "queries": 70
+  },
+  "input_packing": [
+    {
+      "lanes": 4,
+      "name": "x",
+      "qm31_wires": 1
+    }
+  ],
+  "manifest_precommitment_sha256": null,
+  "name": "math_polynomial4",
+  "padded": {
+    "blake_g": 0,
+    "eq": 0,
+    "m31_to_u32": 0,
+    "qm31_ops": 512,
+    "triple_xor": 0
+  },
+  "preprocessed_cells": 4096,
+  "preprocessed_columns": 8,
+  "preprocessed_root": "e776d8a792426b6d8efd67dc5371f4947cadc259ea2ee2b49a69e7d25c75f21b",
+  "private_boundary": null,
+  "profile": "direct-m31-v4",
+  "program_sha256": "ab18f875aeb565ef666a7893fcd71a115996b1cc2d3613722317c00b91917b7d",
+  "proof_privacy": null,
+  "public_abi_sha256": null,
+  "public_binding": [
+    {
+      "binding_qm31_end": 23,
+      "binding_qm31_start": 19,
+      "conversion_m31_to_u32_end": 0,
+      "conversion_m31_to_u32_start": 0,
+      "conversion_qm31_end": 12,
+      "conversion_qm31_start": 12,
+      "name": "x",
+      "word_count": 4,
+      "word_start": 0
+    },
+    {
+      "binding_qm31_end": 27,
+      "binding_qm31_start": 23,
+      "conversion_m31_to_u32_end": 0,
+      "conversion_m31_to_u32_start": 0,
+      "conversion_qm31_end": 19,
+      "conversion_qm31_start": 12,
+      "name": "result",
+      "word_count": 4,
+      "word_start": 4
+    }
+  ],
+  "raw": {
+    "blake_g": 0,
+    "eq": 0,
+    "m31_to_u32": 0,
+    "qm31_ops": 329,
+    "triple_xor": 0
+  },
+  "repeated_step": null,
+  "source_map": [
+    {
+      "blake_g_end": 0,
+      "blake_g_start": 0,
+      "canonical_id": 0,
+      "eq_end": 0,
+      "eq_start": 0,
+      "m31_to_u32_end": 0,
+      "m31_to_u32_start": 0,
+      "name": "x",
+      "qm31_end": 6,
+      "qm31_start": 0,
+      "triple_xor_end": 0,
+      "triple_xor_start": 0
+    },
+    {
+      "blake_g_end": 0,
+      "blake_g_start": 0,
+      "canonical_id": 1,
+      "eq_end": 0,
+      "eq_start": 0,
+      "m31_to_u32_end": 0,
+      "m31_to_u32_start": 0,
+      "name": "_s31_0",
+      "qm31_end": 7,
+      "qm31_start": 6,
+      "triple_xor_end": 0,
+      "triple_xor_start": 0
+    },
+    {
+      "blake_g_end": 0,
+      "blake_g_start": 0,
+      "canonical_id": 2,
+      "eq_end": 0,
+      "eq_start": 0,
+      "m31_to_u32_end": 0,
+      "m31_to_u32_start": 0,
+      "name": "_s31_1",
+      "qm31_end": 8,
+      "qm31_start": 7,
+      "triple_xor_end": 0,
+      "triple_xor_start": 0
+    },
+    {
+      "blake_g_end": 0,
+      "blake_g_start": 0,
+      "canonical_id": 3,
+      "eq_end": 0,
+      "eq_start": 0,
+      "m31_to_u32_end": 0,
+      "m31_to_u32_start": 0,
+      "name": "fifth",
+      "qm31_end": 9,
+      "qm31_start": 8,
+      "triple_xor_end": 0,
+      "triple_xor_start": 0
+    },
+    {
+      "blake_g_end": 0,
+      "blake_g_start": 0,
+      "canonical_id": 4,
+      "eq_end": 0,
+      "eq_start": 0,
+      "m31_to_u32_end": 0,
+      "m31_to_u32_start": 0,
+      "name": "triple",
+      "qm31_end": 10,
+      "qm31_start": 9,
+      "triple_xor_end": 0,
+      "triple_xor_start": 0
+    },
+    {
+      "blake_g_end": 0,
+      "blake_g_start": 0,
+      "canonical_id": 5,
+      "eq_end": 0,
+      "eq_start": 0,
+      "m31_to_u32_end": 0,
+      "m31_to_u32_start": 0,
+      "name": "combined",
+      "qm31_end": 11,
+      "qm31_start": 10,
+      "triple_xor_end": 0,
+      "triple_xor_start": 0
+    },
+    {
+      "blake_g_end": 0,
+      "blake_g_start": 0,
+      "canonical_id": 6,
+      "eq_end": 0,
+      "eq_start": 0,
+      "m31_to_u32_end": 0,
+      "m31_to_u32_start": 0,
+      "name": "result",
+      "qm31_end": 12,
+      "qm31_start": 11,
+      "triple_xor_end": 0,
+      "triple_xor_start": 0
+    }
+  ],
+  "state_fold_step": null,
+  "trace_log_size": 9
+}

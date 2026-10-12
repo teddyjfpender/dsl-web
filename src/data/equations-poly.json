@@ -1,0 +1,178 @@
+{
+  "assertions": [],
+  "field_modulus": 2147483647,
+  "nodes": [
+    {
+      "builder_gate_rows": {
+        "blake_g": 0,
+        "eq": 0,
+        "m31_to_u32": 0,
+        "qm31": 1,
+        "triple_xor": 0
+      },
+      "canonical_id": 1,
+      "expanded_air_terms": false,
+      "field_equations": [
+        "_s31_0[j] - x[j] * x[j] = 0"
+      ],
+      "functional_spec": null,
+      "index": "j ranges over the output array",
+      "name": "_s31_0",
+      "notes": [],
+      "op": "mul",
+      "output": {
+        "kind": "m31",
+        "length": 4
+      },
+      "source": {
+        "column": 17,
+        "line": 3
+      }
+    },
+    {
+      "builder_gate_rows": {
+        "blake_g": 0,
+        "eq": 0,
+        "m31_to_u32": 0,
+        "qm31": 1,
+        "triple_xor": 0
+      },
+      "canonical_id": 2,
+      "expanded_air_terms": false,
+      "field_equations": [
+        "_s31_1[j] - _s31_0[j] * _s31_0[j] = 0"
+      ],
+      "functional_spec": null,
+      "index": "j ranges over the output array",
+      "name": "_s31_1",
+      "notes": [],
+      "op": "mul",
+      "output": {
+        "kind": "m31",
+        "length": 4
+      },
+      "source": {
+        "column": 17,
+        "line": 3
+      }
+    },
+    {
+      "builder_gate_rows": {
+        "blake_g": 0,
+        "eq": 0,
+        "m31_to_u32": 0,
+        "qm31": 1,
+        "triple_xor": 0
+      },
+      "canonical_id": 3,
+      "expanded_air_terms": false,
+      "field_equations": [
+        "fifth[j] - _s31_1[j] * x[j] = 0"
+      ],
+      "functional_spec": null,
+      "index": "j ranges over the output array",
+      "name": "fifth",
+      "notes": [],
+      "op": "mul",
+      "output": {
+        "kind": "m31",
+        "length": 4
+      },
+      "source": {
+        "column": 17,
+        "line": 3
+      }
+    },
+    {
+      "builder_gate_rows": {
+        "blake_g": 0,
+        "eq": 0,
+        "m31_to_u32": 0,
+        "qm31": 1,
+        "triple_xor": 0
+      },
+      "canonical_id": 4,
+      "expanded_air_terms": false,
+      "field_equations": [
+        "triple[j] - x[j] * 3 = 0"
+      ],
+      "functional_spec": null,
+      "index": "j ranges over the output array",
+      "name": "triple",
+      "notes": [],
+      "op": "mul_const",
+      "output": {
+        "kind": "m31",
+        "length": 4
+      },
+      "source": {
+        "column": 20,
+        "line": 4
+      }
+    },
+    {
+      "builder_gate_rows": {
+        "blake_g": 0,
+        "eq": 0,
+        "m31_to_u32": 0,
+        "qm31": 1,
+        "triple_xor": 0
+      },
+      "canonical_id": 5,
+      "expanded_air_terms": false,
+      "field_equations": [
+        "combined[j] - fifth[j] - triple[j] = 0"
+      ],
+      "functional_spec": null,
+      "index": "j ranges over the output array",
+      "name": "combined",
+      "notes": [],
+      "op": "add",
+      "output": {
+        "kind": "m31",
+        "length": 4
+      },
+      "source": {
+        "column": 26,
+        "line": 5
+      }
+    },
+    {
+      "builder_gate_rows": {
+        "blake_g": 0,
+        "eq": 0,
+        "m31_to_u32": 0,
+        "qm31": 1,
+        "triple_xor": 0
+      },
+      "canonical_id": 6,
+      "expanded_air_terms": false,
+      "field_equations": [
+        "result[j] - combined[j] - 2147483640 = 0"
+      ],
+      "functional_spec": null,
+      "index": "j ranges over the output array",
+      "name": "result",
+      "notes": [],
+      "op": "add_const",
+      "output": {
+        "kind": "m31",
+        "length": 4
+      },
+      "source": {
+        "column": 18,
+        "line": 6
+      }
+    }
+  ],
+  "profile": "direct-m31-v4",
+  "program": "math_polynomial4",
+  "public_inputs": [
+    "x"
+  ],
+  "public_outputs": [
+    "result"
+  ],
+  "schema": "s31-semantic-equations-v1",
+  "scope": "Source-level field equations. The pinned circuit AIR also constrains wire lookup closure, public binding, range/bit rules, and profile-specific rows. Builder gate counts are not physical AIR row ownership."
+}
